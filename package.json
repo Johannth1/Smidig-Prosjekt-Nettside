@@ -1,0 +1,64 @@
+{
+  "name": "smidig_prosjekt-nettside",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Laon21/Smidig-prosjekt-nettside.git",
+  "author": "Laon21 <31162065+Laon21@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "dev": "concurrently \"yarn watch:client\" \"yarn watch:server\"",
+    "watch:client": "webpack --watch --mode development",
+    "watch:server": "nodemon src/server/server.js --watch src/server --watch public/bundle.js",
+    "build": "webpack --mode production",
+    "start": "node src/server/server.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^4.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^24.7.1",
+    "jsdom": "^15.0.0",
+    "nodemon": "^1.18.9",
+    "react-addons-test-utils": "^15.6.2",
+    "supertest": "^4.0.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "history": "^4.9.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-unity-webgl": "^7.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/jest-setup.js"
+    ],
+    "testRegex": "tests/.*-test\\.(js|jsx)$",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ]
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
