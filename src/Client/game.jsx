@@ -10,13 +10,18 @@ export class Game extends React.Component {
     // paths are relative from your index file.
 
     this.unityContent = new UnityContent(
-      "../../WebGL-test/Build/WebGL-test.json",
-      "../../WebGL-test/Build/UnityLoader.js"
+      "webgl/WebGL-test.json",
+      "webgl/UnityLoader.js"
     );
   }
 
   render() {
 
+    <div className="btnPart">
+    <Link to={"/home"} className={"btn"}>
+        Home
+        </Link>
+</div>
     // Finally render the Unity component and pass 
     // the Unity content through the props.
 
