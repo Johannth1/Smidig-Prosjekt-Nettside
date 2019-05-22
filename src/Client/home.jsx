@@ -13,7 +13,7 @@ export class Home extends React.Component {
                     <h2>Oslo havn 1798</h2>
                     <div className="btnPart">
                         <Link to={"/game"} className={"btn"}>
-                            start
+                            <h2 className={"btn-text"}>start</h2>
                             </Link>
                     </div>
                 </div>
