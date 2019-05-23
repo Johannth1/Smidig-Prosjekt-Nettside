@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Home } from "./home"
 import { Game } from "./game"
+import HeaderBar from "./headerbar"
 
 class App extends React.Component {
 
@@ -28,6 +29,7 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <div>
+                    <HeaderBar/>
                     <Switch>
                         <Route exact path="/game"
                             render={props => <Game {...props} />} />
