@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Home } from "./home"
-import { Game } from "./game"
+import Home from "./home"
+import Game from "./game"
 import HeaderBar from "./headerbar"
 
 class App extends React.Component {

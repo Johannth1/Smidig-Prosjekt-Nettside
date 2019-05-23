@@ -23,13 +23,12 @@ export class Game extends React.Component {
 
     return (
       <div id="gamePage">
-        <div id="unityContainer">
+        <div className="unityContainer">
     <Unity unityContent={this.unityContent}/> </div>
-    <Link to={"/"} className={"btn"}> 
-    <h2 className={"btn-text"}>Returner til start siden</h2>
-    </Link>
     </div>
     
     )
   }
 }
+
+export default Game;
