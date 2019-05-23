@@ -5,11 +5,26 @@ html {
 
 body {
     overflow: hidden;
+    
 }
 
 #root {
     margin-top: 70px;
     left: 0;
+    height: 100%;
+    
+}
+
+#homePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #gamePage {
@@ -25,6 +40,7 @@ body {
 
 .headerBar {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     padding-bottom: 10px;
@@ -38,19 +54,28 @@ body {
 .headerBar_Nav {
     display: flex;
     height: 100%;
+    width: 100%;
     padding: 0 1rem;
     align-items: center;
 }
 
 .logo_btn_home img{
-    margin-top: 10px;
+    position: absolute;
     margin-right: 50px;
+    margin-top: -5px;
     height: 50%;
     width: 50px;
 }
 
+.headerbar_nav_items {
+    width: 100%;
+    
+}
+
 .headerbar_nav_items ul {
     list-style-type: none;
+    position: fixed;
+    right: 25px;
     margin: 0;
     padding: 0;
     display: flex;

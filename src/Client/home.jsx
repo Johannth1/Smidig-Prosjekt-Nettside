@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import home from "../Server/img/home.jpg"
 
 export class Home extends React.Component {
     constructor(props) {
@@ -8,7 +9,7 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="homePage">
                 <div>
                     <h2>Oslo havn 1798</h2>
                     <div className="btnPart">
