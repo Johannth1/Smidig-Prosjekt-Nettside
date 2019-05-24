@@ -1,24 +1,36 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import home from "../Server/img/home.jpg"
+import Button from 'react-bootstrap/Button';
+
+
+let backgroundStyle = {
+    backgroundImage: `url(${home})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+}
 
 export class Home extends React.Component {
     constructor(props) {
         super(props)
     }
 
+
+
     render() {
         return (
-            <div id="homePage">
-                <div>
-                    <h2>Oslo havn 1798</h2>
-                    <div className="btnPart">
-                        <Link to={"/game"} className={"btn"}>
-                            <h2 className={"btn-text"}>start</h2>
-                            </Link>
+            <section id="homePage" style={backgroundStyle}>
+                <div id="homePage-container">
+                    <div className="demo-btn">
+                        <Link to={"/game"}>
+                            <Button variant="primary" size="lg">
+                                Play Demo
+                                </Button>
+                        </Link>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 

@@ -6,7 +6,9 @@ import logo from '../Server/img/logo.png';
 export class HeaderBar extends React.Component {
     constructor(props) {
         super(props);
+        console.log({logo});
     }
+
 
     render() {
 
