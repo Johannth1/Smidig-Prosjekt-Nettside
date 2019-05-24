@@ -28,7 +28,10 @@ body {
     width: 100%;
 }
 
-
+.unityContainer {
+    height: 100%;
+    width: 100%;
+}
 
 .headerBar {
     position: fixed;
