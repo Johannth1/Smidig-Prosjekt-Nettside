@@ -2,9 +2,9 @@
 "companyName": "Gruppe 30",
 "productName": "Edvard Sills - Minigames",
 "productVersion": "0.1",
-"dataUrl": "Unity builds.data.unityweb",
-"wasmCodeUrl": "Unity builds.wasm.code.unityweb",
-"wasmFrameworkUrl": "Unity builds.wasm.framework.unityweb",
+"dataUrl": "build.data.unityweb",
+"wasmCodeUrl": "build.wasm.code.unityweb",
+"wasmFrameworkUrl": "build.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
@@ -12,5 +12,5 @@
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.1.3f1"
+"unityVersion": "2019.1.4f1"
 }
