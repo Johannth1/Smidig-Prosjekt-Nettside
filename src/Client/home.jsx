@@ -1,15 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import home from "../Server/img/home.jpg"
 import Button from 'react-bootstrap/Button';
-
-
-let backgroundStyle = {
-    backgroundImage: `url(${home})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-}
 
 export class Home extends React.Component {
     constructor(props) {
@@ -20,7 +11,6 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <section id="homePage" style={backgroundStyle}>
                 <div id="homePage-container">
                     <div className="demo-btn">
                         <Link to={"/game"}>
@@ -30,7 +20,6 @@ export class Home extends React.Component {
                         </Link>
                     </div>
                 </div>
-            </section>
         )
     }
 

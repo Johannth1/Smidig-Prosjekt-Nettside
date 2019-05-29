@@ -1,35 +1,40 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import logo from '../Server/img/logo.png';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
 
 
 export class HeaderBar extends React.Component {
     constructor(props) {
         super(props);
-        console.log({logo});
     }
 
 
     render() {
 
         return (
-            <header className={"headerBar"}>
-            <nav className="headerBar_Nav"> 
-                <div>
-                </div>
-            <div className="headerbar_logo">
-                <Link className="logo_btn_home" to={"/"}>
-                    <img src={logo} alt ="logo"/>
-                </Link></div>
-                <div className="headerbar_nav_items">
-                    <ul>
-                    <li><a href=""></a>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    </ul>
-                </div>
-            </nav>
-            </header>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand>
+                    <Link to={"/game"}>
+                        <img
+                            src={logo}
+                            width="40"
+                            height="40"
+                            className="d-inline-block align-top"
+                            alt="Tidvis logo"
+                        />
+                    </Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="https://www.tidvis.no/" target="_blank">Om Tidvis</Nav.Link>
+                        <Nav.Link href="https://oslohavn1798.no/" target="_blank">Oslo Havn 1798</Nav.Link>
+                    </Nav>                   
+                </Navbar.Collapse>
+            </Navbar >
         );
     }
 }

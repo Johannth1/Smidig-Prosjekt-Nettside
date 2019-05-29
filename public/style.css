@@ -1,26 +1,30 @@
 html {
     height: 100%;
-    width: 100%;
+    width: 100%; 
 }
 
 body {
     overflow: hidden;
-    
 }
 
 #root {
-    height: 100%;
-    
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
 }
 
-#homePage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+#homePage-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+
+   
 #gamePage {
     position: absolute;
     left: 0px;
@@ -43,8 +47,8 @@ body {
     border-bottom: 2px solid black;
     background-color: lightblue;
     height: 50px;
-    width: 100%;
-    display: flex;
+    width: 100vw;
+    display: inline-flex;
 }
 
 .headerBar_Nav {
@@ -63,30 +67,8 @@ body {
     width: 50px;
 }
 
-.headerbar_nav_items {
-    width: 100%;
-    
-}
 
-.headerbar_nav_items ul {
-    list-style-type: none;
-    position: fixed;
-    right: 25px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
-.headerbar_nav_items li {
-    padding: 0 0.5rem;
-    margin-right: 50px;
-}
-
-#homePage-container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
 
 .demo-btn {
     position: relative;
