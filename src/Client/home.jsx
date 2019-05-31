@@ -5,9 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 const buttonStyle = {
         position: 'fixed',
-        left: '50vw',
+        left: '50%',
         bottom: '5%',
-        marginLeft: '-6vw'
 }
 
 
@@ -35,7 +34,7 @@ export class Home extends React.Component {
                 <div style={homepageStyle} id="homePage-container">
                     <div style={buttonStyle} className="demo-btn">
                         <Link to={"/game"}>
-                            <Button variant="primary" size="lg">
+                            <Button variant="primary" size="lg" style={{ marginLeft: "-50%"}}>
                                 Start Demo
                                 </Button>
                         </Link>
