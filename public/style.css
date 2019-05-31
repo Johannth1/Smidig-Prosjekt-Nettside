@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #root {
@@ -35,43 +35,4 @@ body {
 .unityContainer {
     height: 100%;
     width: 100%;
-}
-
-.headerBar {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    margin-bottom: 10px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-    background-color: lightblue;
-    height: 50px;
-    width: 100vw;
-    display: inline-flex;
-}
-
-.headerBar_Nav {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    padding: 0 1rem;
-    align-items: center;
-}
-
-.logo_btn_home img{
-    position: absolute;
-    margin-right: 50px;
-    margin-top: -5px;
-    height: 50%;
-    width: 50px;
-}
-
-
-
-
-.demo-btn {
-    position: relative;
-    top: 25%;
-    left: 15%;
 }

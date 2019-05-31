@@ -1,6 +1,5 @@
 import React from "react";
 import Unity, { UnityContent } from "react-unity-webgl";
-import { Link } from "react-router-dom"
 
 
 export class Game extends React.Component {

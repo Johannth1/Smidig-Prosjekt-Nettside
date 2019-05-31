@@ -1,21 +1,42 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import edvard from '../Server/img/edvard.jpg';
 import Button from 'react-bootstrap/Button';
+
+const buttonStyle = {
+        position: 'fixed',
+        left: '50vw',
+        bottom: '5%',
+        marginLeft: '-6vw'
+}
+
+
+
+const homepageStyle = {
+    height: '100vh',
+    width: '100vw',
+    backgroundImage: 'url(edvard.jpg)',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    alignItems: 'center'
+}
 
 export class Home extends React.Component {
     constructor(props) {
         super(props)
     }
 
+   
 
 
     render() {
         return (
-                <div id="homePage-container">
-                    <div className="demo-btn">
+                <div style={homepageStyle} id="homePage-container">
+                    <div style={buttonStyle} className="demo-btn">
                         <Link to={"/game"}>
                             <Button variant="primary" size="lg">
-                                Play Demo
+                                Start Demo
                                 </Button>
                         </Link>
                     </div>
