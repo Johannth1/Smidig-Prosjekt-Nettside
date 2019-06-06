@@ -29,7 +29,20 @@ export class HeaderBar extends React.Component {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="justify-content-start" style={{ width: "100%" }} as="ul">
+                    <Nav.Item as="li">
+                            <Nav.Link style={{ fontSize: "1.3rem" }}>Episoder</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Nav.Link style={{ fontSize: "1.3rem" }}>Dypere informasjon</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Nav.Link style={{ fontSize: "1.3rem" }}>Skoleside</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+
                     <Nav className="justify-content-end" style={{ width: "100%" }} as="ul">
+                      
                         <Nav.Item as="li">
                             <Nav.Link href="https://www.tidvis.no/" target="_blank" style={{ fontSize: "1.3rem" }}>Om Tidvis</Nav.Link>
                         </Nav.Item>
