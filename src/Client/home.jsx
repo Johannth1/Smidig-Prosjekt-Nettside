@@ -13,7 +13,7 @@ const buttonStyle = {
 
 
 const homepageStyle = {
-    height: '100vh',
+    height: '98vh',
     width: '100vw',
     backgroundImage: 'url(edvard.jpg)',
     backgroundPosition: 'center',
