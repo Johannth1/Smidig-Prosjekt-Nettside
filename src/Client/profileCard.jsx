@@ -10,8 +10,10 @@ import Button from 'react-bootstrap/Button';
 const profileContainerStyle = {
     width: '100vw',
     height: '60vh',
+    paddingTop: '10px',
     backgroundColor: 'lightgrey',
     fontSize: '1rem'
+
 }
 
 // Centers text
