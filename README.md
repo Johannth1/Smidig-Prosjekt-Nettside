@@ -6,8 +6,8 @@
 
 ## Ønsker du å teste løsningen?
 1. Last ned prosjeket
-2. yarn install
-3. yarn dev
+2. yarn/npm install
+3. yarn/npm dev
 4. åpne localhost på port 8080
 
 
