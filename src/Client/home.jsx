@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import edvard from '../Server/img/edvard.jpg';
 import Button from 'react-bootstrap/Button';
-import Profile from "./profile"
+import ProfileCard from "./profileCard"
+import EpisodesCard from "./episodesCard";
 
 const buttonStyle = {
     position: 'absolute',
@@ -42,8 +43,8 @@ export class Home extends React.Component {
                         </Link>
                     </div>
                 </div> 
-                <Profile />
-
+                <ProfileCard />
+                <EpisodesCard />
             </React.Fragment>
         )
     }
