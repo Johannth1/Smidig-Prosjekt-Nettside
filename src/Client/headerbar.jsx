@@ -31,13 +31,13 @@ export class HeaderBar extends React.Component {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-start" style={{ width: "100%" }} as="ul">
                     <Nav.Item as="li">
-                            <Nav.Link style={{ fontSize: "1.3rem" }}>Episoder</Nav.Link>
+                            <Nav.Link style={{ fontSize: "1.3rem" }} href={"/episoder"}>Episoder</Nav.Link>
                         </Nav.Item>
                         <Nav.Item as="li">
-                            <Nav.Link style={{ fontSize: "1.3rem" }}>Dypere informasjon</Nav.Link>
+                            <Nav.Link style={{ fontSize: "1.3rem" }} href={"/info"}>Informasjon</Nav.Link>
                         </Nav.Item>
                         <Nav.Item as="li">
-                            <Nav.Link style={{ fontSize: "1.3rem" }}>Skoleside</Nav.Link>
+                            <Nav.Link style={{ fontSize: "1.3rem" }} href={"/skole"}>Skoleside</Nav.Link>
                         </Nav.Item>
                     </Nav>
 

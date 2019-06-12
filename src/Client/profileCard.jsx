@@ -11,6 +11,8 @@ const profileContainerStyle = {
     width: '100vw',
     height: '60vh',
     paddingTop: '10px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
     backgroundColor: 'lightgrey',
     fontSize: '1rem'
 
@@ -48,9 +50,9 @@ export class ProfileCard extends React.Component {
                     <Container>
                         <Row className="justify-content-md-center">
                             <Col xs>
-                                <Row className="justify-content-md-center"> <h2>Opprinnelse?</h2> </Row>
+                                <Row className="justify-content-md-center"> <h3>Opprinnelse?</h3> </Row>
                                 <Row className="justify-content-md-center"> <p>Sønn av en norsk dommer i den dansk-norske kolonien St. Croix i Karibia og en slavekvinne</p></Row>
-                                <Row className="justify-content-md-center"> <h2>Kort om meg</h2></Row>
+                                <Row className="justify-content-md-center"> <h3>Kort om meg</h3></Row>
                                 <Row className="justify-content-md-center"> <p>10 år gammel ankom eg alene til Oslo etter et dramatisk forlis i Oslofjorden</p></Row>
                                 <Row className="justify-content-md-center"> <p>Her bodde eg fra eg var 10 til 22 år hos min tante, Fru Bull</p></Row>
                                 <Row className="justify-content-md-center"> <p>Gikk i snekkerlære og ble etter hvert snekkermester på Bærums verk</p></Row>
