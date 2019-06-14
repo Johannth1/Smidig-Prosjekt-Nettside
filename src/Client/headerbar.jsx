@@ -15,7 +15,7 @@ export class HeaderBar extends React.Component {
     render() {
 
         return (
-            <Navbar collapseOnSelect expand="lg" bg="secondary" fixed="top" style={{ borderBottom: "2px solid black"}}> 
+            <Navbar collapseOnSelect expand="lg" bg="secondary" fixed="top" style={{ borderBottom: "2px solid black" }}> 
                 <Navbar.Brand>
                     <Link to="/">
                         <img

@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from "./home"
 import Game from "./game"
 import HeaderBar from "./headerbar"
+import Placeholder from "./placeholder"
 
 class App extends React.Component {
 
@@ -33,6 +34,12 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path="/game"
                             render={props => <Game {...props} />} />
+                        <Route exact path="/info"
+                            render={props => <Placeholder {...props} />} />
+                        <Route exact path="/skole"
+                            render={props => <Placeholder {...props} />} />
+                        <Route exact path="/episoder"
+                            render={props => <Placeholder {...props} />} />
                         <Route exact path="/"
                             render={props => <Home {...props} />} />
                         <Route component={this.notFound} />

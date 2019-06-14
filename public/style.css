@@ -12,14 +12,6 @@ body {
     width: 100vw;
 }
 
-#homePage-container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(home.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 #profilePage {
     height: 100vh;

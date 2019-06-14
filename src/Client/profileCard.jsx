@@ -6,7 +6,6 @@ import Image from 'react-bootstrap/Image'
 import edvard from '../Server/img/edvard_helfigur.jpg'
 import Button from 'react-bootstrap/Button';
 
-// CSS for container
 const profileContainerStyle = {
     width: '100vw',
     height: '60vh',
@@ -60,7 +59,7 @@ export class ProfileCard extends React.Component {
                             <Col xs>
                                 <Image src={edvard} roundedCircle fluid style={profilePictureStyle} alt="Helfigurbilde av Edvard" />
                                 <Row><p>{"\n"}</p></Row> {/*Creates some whitespace for the image*/}
-                                <Button variant="primary" size="sm">Lær mer</Button>
+                                <Button variant="primary" size="sm" href="/info">Lær mer</Button>
                             </Col>
 
                         </Row>
